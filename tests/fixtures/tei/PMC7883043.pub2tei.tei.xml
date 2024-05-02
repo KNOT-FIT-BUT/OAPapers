@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" type="main">Cardiovascular complications in COVID‐19 patients with or without diabetes mellitus</title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>John Wiley and Sons Inc.</publisher>
+            <pubPlace>Hoboken</pubPlace>
+            <availability>
+               <licence>© 2020 The Authors. <hi rend="italic">Endocrinology, Diabetes &amp; Metabolism</hi> published by John Wiley &amp; Sons Ltd.</licence>
+               <p>This is an open access article under the terms of the <ref target="https://creativecommons.org/licenses/by/4.0/" type="uri">http://creativecommons.org/licenses/by/4.0/</ref> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</p>
+            </availability>
+            <date type="e-published" when="2020-12-25">2020</date>
+            <date type="collection-published" when="2021-04">2021</date>
+         </publicationStmt>
+         <notesStmt>
+            <note type="content-type">research-article</note>
+            <note type="publication-type">journal</note>
+         </notesStmt>
+         <sourceDesc>
+            <biblStruct>
+               <analytic>
+                  <title level="a" type="main">Cardiovascular complications in COVID‐19 patients with or without diabetes mellitus</title>
+                  <title level="a" type="left-running-head">ABE et al.</title>
+                  <author role="corresp" xml:id="author-0000">
+                     <persName>
+                        <surname>Abe</surname>
+                        <forename type="first">Temidayo</forename>
+                     </persName>
+                     <affiliation>
+                        <ref>
+                           <hi rend="superscript">1</hi>
+                        </ref>
+                        <name type="organisation-division">Internal Medicine Residency Program</name>
+                        <orgName type="institution">Morehouse School of Medicine</orgName>
+                        <settlement>Atlanta</settlement>
+                        <name type="country-part">GA</name>
+                        <address>
+                           <country key="US">UNITED STATES</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <author xml:id="author-0001">
+                     <persName>
+                        <surname>Egbuche</surname>
+                        <forename type="first">Obiora</forename>
+                     </persName>
+                     <affiliation>
+                        <ref>
+                           <hi rend="superscript">2</hi>
+                        </ref>
+                        <name type="organisation-division">Department of Cardiovascular Disease</name>
+                        <orgName type="institution">Morehouse School of Medicine</orgName>
+                        <settlement>Atlanta</settlement>
+                        <name type="country-part">GA</name>
+                        <address>
+                           <country key="US">UNITED STATES</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <author xml:id="author-0002">
+                     <persName>
+                        <surname>Igwe</surname>
+                        <forename type="first">Joseph</forename>
+                     </persName>
+                     <affiliation>
+                        <ref>
+                           <hi rend="superscript">1</hi>
+                        </ref>
+                        <name type="organisation-division">Internal Medicine Residency Program</name>
+                        <orgName type="institution">Morehouse School of Medicine</orgName>
+                        <settlement>Atlanta</settlement>
+                        <name type="country-part">GA</name>
+                        <address>
+                           <country key="US">UNITED STATES</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <author xml:id="author-0003">
+                     <persName>
+                        <surname>Jegede</surname>
+                        <forename type="first">Opeyemi</forename>
+                     </persName>
+                     <affiliation>
+                        <ref>
+                           <hi rend="superscript">3</hi>
+                        </ref>
+                        <name type="organisation-division">Department of Epidemiology and Biostatistics</name>
+                        <orgName type="institution">University of North Texas Health Science Center</orgName>
+                        <settlement>Fort Worth</settlement>
+                        <name type="country-part">TX</name>
+                        <address>
+                           <country key="US">UNITED STATES</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <author xml:id="author-0004">
+                     <persName>
+                        <surname>Wagle</surname>
+                        <forename type="first">Bivek</forename>
+                     </persName>
+                     <affiliation>
+                        <ref>
+                           <hi rend="superscript">4</hi>
+                        </ref>
+                        <name type="organisation-division">Department of Medicine</name>
+                        <orgName type="institution">Morehouse School of Medicine</orgName>
+                        <settlement>Atlanta</settlement>
+                        <name type="country-part">GA</name>
+                        <address>
+                           <country key="US">UNITED STATES</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <author xml:id="author-0005">
+                     <persName>
+                        <surname>Olanipekun</surname>
+                        <forename type="first">Titilope</forename>
+                     </persName>
+                     <affiliation>
+                        <ref>
+                           <hi rend="superscript">5</hi>
+                        </ref>
+                        <name type="organisation-division">Department of Hospital Medicine</name>
+                        <orgName type="institution">Covenant Heart System</orgName>
+                        <settlement>Knoxville</settlement>
+                        <name type="country-part">TN</name>
+                        <address>
+                           <country key="US">UNITED STATES</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <author xml:id="author-0006">
+                     <persName>
+                        <surname>Onwuanyi</surname>
+                        <forename type="first">Anekwe</forename>
+                     </persName>
+                     <affiliation>
+                        <ref>
+                           <hi rend="superscript">2</hi>
+                        </ref>
+                        <name type="organisation-division">Department of Cardiovascular Disease</name>
+                        <orgName type="institution">Morehouse School of Medicine</orgName>
+                        <settlement>Atlanta</settlement>
+                        <name type="country-part">GA</name>
+                        <address>
+                           <country key="US">UNITED STATES</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <idno type="pmid">33614986</idno>
+                  <idno type="pmc">PMC7883043</idno>
+                  <idno type="doi">10.1002/edm2.218</idno>
+                  <idno type="publisher-id">EDM2218</idno>
+               </analytic>
+               <monogr>
+                  <title level="j" type="main">Endocrinology, Diabetes &amp; Metabolism</title>
+                  <idno type="nlm-ta">Endocrinol Diabetes Metab</idno>
+                  <idno type="iso-abbrev">Endocrinol Diabetes Metab</idno>
+                  <idno type="doi">10.1002/(ISSN)2398-9238</idno>
+                  <idno type="publisher-id">EDM2</idno>
+                  <idno type="eISSN">2398-9238</idno>
+                  <imprint>
+                     <publisher>John Wiley and Sons Inc.</publisher>
+                     <pubPlace>Hoboken</pubPlace>
+                     <date type="e-published" when="2020-12-25">2020</date>
+                     <date type="collection-published" when="2021-04">2021</date>
+                     <biblScope unit="vol">4</biblScope>
+                     <biblScope unit="issue">2</biblScope>
+                     <biblScope unit="page-count">4</biblScope>
+                     <biblScope unit="fig-count">2</biblScope>
+                     <biblScope unit="table-count">3</biblScope>
+                     <biblScope unit="word-count">2471</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <head>Abstract</head>
+            <div xml:id="edm2218-sec-0001">
+               <head>Introduction</head>
+               <p>Coronavirus disease 2019 (COVID‐19) has become a major global crisis. Preliminary reports have, in general, indicated worse outcomes in diabetes mellitus (DM) patients, but the magnitude of cardiovascular (CV) complications in this subgroup has not been elucidated.</p>
+            </div>
+            <div xml:id="edm2218-sec-0002">
+               <head>Methods</head>
+               <p>We included 142 patients admitted with laboratory‐confirmed COVID‐19 from April 1st to May 30th 2020; 71 (50%) had DM. We compared baseline demographics and study outcomes between those with or without DM using descriptive statistics. Multivariate logistic regression was used to estimate the adjusted odds ratio for the study outcomes in DM patients, compared to those without DM, stratified by age, sex and glycaemic control. CV outcomes of interest include acute myocarditis, acute heart failure, acute myocardial infarction, new‐onset atrial fibrillation and composite cardiovascular end‐point consisting of all individual outcomes above.</p>
+            </div>
+            <div xml:id="edm2218-sec-0003">
+               <head>Result</head>
+               <p>Mean age was 58 years. The unadjusted rates were higher in DM patients compared to non‐diabetics for the composite cardiovascular end‐point (73.2% vs. 40.6% <hi rend="italic">p</hi> &lt; .0001), acute myocarditis (36.6% vs. 15.5% <hi rend="italic">p</hi> = .004), acute heart failure (25.3% vs. 5.6% <hi rend="italic">p</hi> = .001), acute myocardial infarction (9.9% vs. 1.4% <hi rend="italic">p</hi> = .03) and new‐onset atrial fibrillation (12.7% vs. 1.4% <hi rend="italic">p</hi> = .009). After controlling for relevant confounding variables, diabetic patients had higher odds of composite cardiovascular end‐point, acute heart failure and new‐onset atrial fibrillation.</p>
+            </div>
+         </abstract>
+         <abstract>
+            <p>In this study, we investigated cardiovascular complications in 142 COVID‐19 patients with versus without diabetes mellitus. Patients with diabetes mellitus were more likely to be older, have more comorbidities, and less likely to receive life‐saving medications. After adjusting for relevant comorbidities, the adjusted odds for composite cardiovascular endpoint, acute heart failure, and new onset atrial fibrillation were significantly higher among patients with diabetes mellitus.<figure type="boxed-text">
+                  <graphic url="EDM2-4-e00218-g002.jpg"/>
+               </figure>
+            </p>
+         </abstract>
+         <textClass ana="subject">
+            <keywords scheme="overline">
+               <term>Original Research Article</term>
+            </keywords>
+            <keywords scheme="heading">
+               <term>Original Research Articles</term>
+            </keywords>
+         </textClass>
+         <textClass ana="keyword">
+            <keywords>
+               <term>cardiovascular complications</term>
+               <term>COVID‐19</term>
+               <term>diabetes mellitus</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2020-10-26">Revised</change>
+         <change when="2020-08-18">Received</change>
+         <change when="2020-11-23">Accepted</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div n="1" xml:id="edm2218-sec-0004">
+            <head>INTRODUCTION</head>
+            <p>Coronavirus disease 2019 (COVID‐19) has become a major global crisis. Although initially thought to affect only the respiratory system, recent studies have demonstrated gastrointestinal, neurological and cardiovascular sequelae.<ref target="#edm2218-bib-0001" type="ref">
+                  <hi rend="superscript">1</hi>
+               </ref> However, patients with underlying cardiovascular disease (CVD) tend to have worse outcomes compared to those without CVD.<ref target="#edm2218-bib-0001" type="ref">
+                  <hi rend="superscript">1</hi>
+               </ref> Also, COVID‐19 is associated with high rates of cardiovascular complications such as acute myocarditis (up to 28%), acute heart failure (23%) and arrhythmias (17%).<ref target="#edm2218-bib-0001" type="ref">
+                  <hi rend="superscript">1</hi>
+               </ref>, <ref target="#edm2218-bib-0002" type="ref">
+                  <hi rend="superscript">2</hi>
+               </ref> Finally, those who develop cardiovascular complications like acute myocarditis and acute heart failure are more likely to die.<ref target="#edm2218-bib-0001" type="ref">
+                  <hi rend="superscript">1</hi>
+               </ref>, <ref target="#edm2218-bib-0002" type="ref">
+                  <hi rend="superscript">2</hi>
+               </ref> Diabetes mellitus (DM) represents a significant health burden in the United States and is associated with severe illness in patients with COVID‐19.<ref target="#edm2218-bib-0003" type="ref">
+                  <hi rend="superscript">3</hi>
+               </ref> While preliminary reports have, in general, indicated worse outcomes in diabetics, the magnitude of CVD complications in this subgroup has not been fully elucidated.</p>
+         </div>
+         <div n="2" type="methods" xml:id="edm2218-sec-0005">
+            <head>METHODS</head>
+            <p>This study was conducted at Grady Memorial Hospital, the largest academic centre in Georgia, United States. This study was approved by our institutional review board with a health insurance portability and accountability act (HIPAA) waiver due to minimal risk to the privacy of individuals. We queried the hospital's electronic medical records from April 1st to May 30th 2020, to identify patients with laboratory‐confirmed COVID‐19 (Figure <ref target="#edm2218-fig-0001" type="fig">1</ref>).</p>
+            <figure xml:id="edm2218-fig-0001">
+               <head type="label">FIGURE 1</head>
+               <figDesc>Flow chart of our study design. COVID‐19 represents coronavirus disease 2019, DM, diabetes mellitus; GMH, Grady Memorial Hospital</figDesc>
+               <graphic url="EDM2-4-e00218-g001"/>
+            </figure>
+            <p>We collected patients level data, including demographics, comorbidities and in‐hospital complications. This study's primary end‐point is to investigate DM’s impact on acute heart failure, acute myocarditis, acute myocardial infarction, new‐onset atrial fibrillation and composite cardiovascular end‐point among COVID‐19 patients. Acute heart failure was defined as the presence of clinical signs and symptoms of heart failure, combined with radiologic and laboratory evidence, acute myocarditis as troponin I greater than 0.03 ng/ml, acute myocardial infarction according to the fourth universal definition of myocardial infarction,<ref target="#edm2218-bib-0004" type="ref">
+                  <hi rend="superscript">4</hi>
+               </ref> new‐onset atrial fibrillation based on electrocardiographic changes and composite cardiovascular end‐point consisting of all individual outcome above.</p>
+            <p>Stata MP V16 was used for statistical analysis. We compared baseline characteristics between patients with DM and those without DM. For categorical variables, differences between demographic, clinical and biochemical characteristics between the two groups were assessed using the chi‐squared test. In contrast, an independent Students <hi rend="italic">t</hi>‐test was used for continuous variables.</p>
+            <p>We compared the incidence of acute heart failure, acute myocarditis, acute myocardial infarction, new‐onset atrial fibrillation and composite cardiovascular end‐point. Descriptive statistics were reported in frequencies with percentages for categorical variables, while continuous variables were reports in mean, standard deviation, median, and 25th and 75th percentiles. Multivariate logistic regression was used to estimate the adjusted odds ratio for the study outcomes in patients with DM, compared to those without DM. Composite cardiovascular end‐point was stratified by age, sex and glycaemic control (controlled (A1c &lt; 7) versus uncontrolled (A1c &gt; 7)).</p>
+         </div>
+         <div n="3" type="results" xml:id="edm2218-sec-0006">
+            <head>RESULTS</head>
+            <p>We included a total of 141 patients with confirmed COVID‐19, of which 71 (50%) had DM. Among patients with DM, 19 (27%) had controlled DM, and 52 (73%) had uncontrolled DM. The mean age of patients with DM was lower compared to those without DM. Patients with DM had higher rates of comorbidities, including obesity, dyslipidaemia and hypertension (Table <ref target="#edm2218-tbl-0001" type="table">1</ref>).</p>
+            <table rend="float" xml:id="edm2218-tbl-0001">
+               <head type="label">TABLE 1</head>
+               <head>Baseline Characteristic for Study Cohort</head>
+               <row>
+                  <cell cols="4" rend="align(left)" role="th" rows="1">COVID−19 Confirmed</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="th" rows="1"/>
+                  <cell cols="1" rend="align(left)" role="th" rows="1">No DM (<hi rend="italic">n</hi> = 71)</cell>
+                  <cell cols="1" rend="align(left)" role="th" rows="1">DM (<hi rend="italic">n</hi> = 71)</cell>
+                  <cell cols="1" rend="align(left)" role="th" rows="1">
+                     <hi rend="italic">p</hi>‐Value</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Age (years), mean</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">60</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">56</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">&lt;.0001</cell>
+               </row>
+               <row>
+                  <cell cols="4" rend="align(left)" role="td" rows="1">Gender (Frequency)</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Male</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">52.8</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">47.2</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.39</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Female</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">45.3</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">54.7</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1"/>
+               </row>
+               <row>
+                  <cell cols="4" rend="align(left)" role="td" rows="1">Race</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">African American</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">73.2</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">81.7</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.23</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">White</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">9.9</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">7.0</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.54</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Asian</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">2.8</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">0.00</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.15</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Native American</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">0.00</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">0.00</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.00</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Hispanic</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">11.3</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">7.0</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.52</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Other</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">2.8</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">4.2</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.64</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Health Insurance</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">73.2</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">66.2</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.36</cell>
+               </row>
+               <row>
+                  <cell cols="4" rend="align(left)" role="td" rows="1">Comorbidities</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Alcohol abuse</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">35.2</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">14.1</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.003</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Tobacco abuse</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">27.6</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">22.7</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.53</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">COPD</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">14.0</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">5.6</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.09</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Asthma</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">5.6</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">5.6</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">1.0</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Dyslipidaemia</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">28.2</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">49.3</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.01</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Valvular Heart Disease</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">5.6</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">5.6</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">1.0</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Chronic Kidney Disease</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">14.1</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">26.7</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.06</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Obesity</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">42.3</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">59.5</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.04</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Congestive Heart Failure</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">12.7</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">21.1</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.17</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Chronic Liver Disease</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">9.9</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">0.0</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.007</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Hypertension</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">60.6</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">84.5</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">&lt;.0001</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Prior Stroke</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">22.5</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">15.5</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.28</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Alcohol Abuse</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">25.9</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">25.4</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.95</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Pulmonary Hypertension</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">1.4</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">0.0</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.35</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Coronary Artery Disease</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">14.1</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">12.7</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.42</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Peripheral Artery Disease</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">7.0</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">12.7</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.26</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Haemodialysis</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">5.6</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">7.0</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.73</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">HIV</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">8.5</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">2.8</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.15</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">History of Atrial fibrillation</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">8.5</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">14.1</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.28</cell>
+               </row>
+               <row>
+                  <cell cols="4" rend="align(left)" role="td" rows="1">In‐hospital management</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Steriods</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">10.0</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">14.1</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.4</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Hydroxloroquine</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">38.0</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">18.3</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.009</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Remdesivir</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">25.4</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">9.9</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.02</cell>
+               </row>
+               <row>
+                  <cell cols="4" rend="align(left)" role="td" rows="1">Complications</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">DVT</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">5.6</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">9.9</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.34</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Pulmonary Embolism</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">2.8</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">9.9</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.09</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Acute Kidney Injury</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">28.2</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">42.3</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.08</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Acute Kidney Injury w RRT</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">2.8</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">11.3</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.05</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Acute Respiratory Failure</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">22.5</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">52.1</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">&lt;.0001</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Death</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">8.5</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">23.9</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.46</cell>
+               </row>
+               <note type="table-wrap-foot">
+                  <note place="inline" xml:id="edm2218-note-0002">
+                     <p>Abbreviations: COPD, chronic obstructive pulmonary disease; DM, diabetes mellitus; DVT, deep vein thrombosis; HIV, human immunodeficiency virus; w RRT, with renal replacement therapy.</p>
+                  </note>
+               </note>
+               <availability>
+                  <p>Permissions: <p>John Wiley &amp; Sons, Ltd</p>
+                  </p>
+               </availability>
+            </table>
+            <p>The unadjusted rates were higher in DM patients compared to non‐diabetics for the composite cardiovascular end‐point (73.2% vs. 40.6% <hi rend="italic">p</hi> &lt; .0001), acute myocarditis (36.6% vs. 15.5% <hi rend="italic">p</hi> = .004), acute heart failure (25.3% vs. 5.6% <hi rend="italic">p</hi> = .001), acute myocardial infarction (9.9% vs. 1.4% <hi rend="italic">p</hi> = .03) and new‐onset atrial fibrillation (12.7% vs. 1.4% <hi rend="italic">p</hi> = .009). After controlling for relevant confounding variables, diabetic patients had higher odds of composite cardiovascular end‐point, acute heart failure and new‐onset atrial fibrillation. In the stratified analysis, a nonsignificant higher odds for composite cardiovascular end‐point was found among older patients, male patients and those with uncontrolled DM (Tables <ref target="#edm2218-tbl-0002" type="table">2</ref> and <ref target="#edm2218-tbl-0003" type="table">3</ref>).</p>
+            <table rend="float" xml:id="edm2218-tbl-0002">
+               <head type="label">TABLE 2</head>
+               <head>Association between DM and cardiovascular outcomes among hospitalized patients with COVID‐19</head>
+               <row>
+                  <cell cols="7" rend="align(left)" role="th" rows="1">COVID−19</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="th" rows="1"/>
+                  <cell cols="1" rend="align(left)" role="th" rows="1">No DM(%)</cell>
+                  <cell cols="1" rend="align(left)" role="th" rows="1">DM (%)</cell>
+                  <cell cols="1" rend="align(left)" role="th" rows="1">aOR</cell>
+                  <cell cols="1" rend="align(left)" role="th" rows="1">Lower CI</cell>
+                  <cell cols="1" rend="align(left)" role="th" rows="1">Upper CI</cell>
+                  <cell cols="1" rend="align(left)" role="th" rows="1">
+                     <hi rend="italic">p</hi>‐Value</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Acute Myocarditis</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">15.5</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">36.6</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">2.0</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">0.7</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">5.6</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.2</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Acute Heart Failure</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">5.6</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">25.3</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">7.9</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">1.6</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">40.3</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.01</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Acute MI</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">1.4</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">9.9</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">7.7</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">0.2</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">315.7</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.3</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">New‐onset AF</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">1.4</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">12.7</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">28.7</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">1.3</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">647.9</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.04</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Composite CVD end‐point</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">40.6</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">73.2</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">3.0</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">1.0</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">8.9</cell>
+                  <cell cols="1" rend="align(char)" role="td" rows="1">.04</cell>
+               </row>
+               <note type="table-wrap-foot">
+                  <note place="inline" xml:id="edm2218-note-0003">
+                     <p>Abbreviations: AF, atrial fibrillation; aOR, adjusted odds ratio; CI, confidence interval; CVD, cardiovascular; DM, diabetes mellitus.</p>
+                  </note>
+               </note>
+               <availability>
+                  <p>Permissions: <p>John Wiley &amp; Sons, Ltd</p>
+                  </p>
+               </availability>
+            </table>
+            <table rend="float" xml:id="edm2218-tbl-0003">
+               <head type="label">TABLE 3</head>
+               <head>Association between DM and composite cardiovascular end‐point among hospitalized patients with COVID‐19, stratified by age, sex and diabetes status</head>
+               <row>
+                  <cell cols="1" rend="align(left)" role="th" rows="2"/>
+                  <cell cols="4" rend="align(left)" role="th" rows="1">95% CI</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="th" rows="1">OR</cell>
+                  <cell cols="1" rend="align(left)" role="th" rows="1">Lower</cell>
+                  <cell cols="1" rend="align(left)" role="th" rows="1">Upper</cell>
+                  <cell cols="1" rend="align(left)" role="th" rows="1">
+                     <hi rend="italic">p</hi>‐Value</cell>
+               </row>
+               <row>
+                  <cell cols="5" rend="align(left)" role="td" rows="1">Age (years)</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">18–50</cell>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">REF</cell>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">REF</cell>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">REF</cell>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">REF</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">50</cell>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">2.2</cell>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">0.5</cell>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">9.6</cell>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">.2</cell>
+               </row>
+               <row>
+                  <cell cols="5" rend="align(left)" role="td" rows="1">Gender</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Female</cell>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">REF</cell>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">REF</cell>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">REF</cell>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">REF</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Male</cell>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">1.6</cell>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">0.4</cell>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">25.4</cell>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">.2</cell>
+               </row>
+               <row>
+                  <cell cols="5" rend="align(left)" role="td" rows="1">Diabetes Status</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Controlled (A1C ≤ 7%)</cell>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">REF</cell>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">REF</cell>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">REF</cell>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">REF</cell>
+               </row>
+               <row>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">Uncontrolled (A1C &gt; 7%)</cell>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">1.5</cell>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">0.2</cell>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">9.7</cell>
+                  <cell cols="1" rend="align(left)" role="td" rows="1">.6</cell>
+               </row>
+               <note type="table-wrap-foot">
+                  <note place="inline" xml:id="edm2218-note-0004">
+                     <p>Abbreviations: A1C, haemoglobin A1C; AF, atrial fibrillation; aOR, adjusted odds ratio; CI, confidence interval; DM, diabetes mellitus; REF, reference group.</p>
+                  </note>
+               </note>
+               <availability>
+                  <p>Permissions: <p>John Wiley &amp; Sons, Ltd</p>
+                  </p>
+               </availability>
+            </table>
+         </div>
+         <div n="4" type="discussion" xml:id="edm2218-sec-0007">
+            <head>DISCUSSION</head>
+            <p>In this study, DM was associated with worse cardiovascular outcomes, including composite cardiovascular end‐point, acute heart failure and new‐onset atrial fibrillation. Cardiovascular complications in COVID‐19 is thought to be related to direct myocardial injury, microvascular damage, cellular hypoxia and cytokine release.<ref target="#edm2218-bib-0005" type="ref">
+                  <hi rend="superscript">5</hi>
+               </ref> The role of innate immune system dysregulation in severe COVID‐19 disease in DM patients has yet to be well defined. However, DM patients have been demonstrated to exhibit severe immune response when infected with COVID‐19.<ref target="#edm2218-bib-0006" type="ref">
+                  <hi rend="superscript">6</hi>
+               </ref> We speculate that the inflammatory response associated with DM could explain the worse cardiovascular outcomes, among other possible explanations such as increased comorbidities and decreased utilization of life‐saving medications, as demonstrated in this study (Table <ref target="#edm2218-tbl-0001" type="table">1</ref>). Further research is needed to understand the disease process's pathophysiologic mechanisms in diabetics and to devise treatment strategies to mitigate complications. The study must be interpreted with caution as over 80% of our study population were African Americans, limiting our study results’ generalizability. Also, the study population consisted predominantly of patients with uncontrolled DM, which might impact the study results.</p>
+         </div>
+         <div type="COI-statement" xml:id="edm2218-sec-0008">
+            <head>CONFLICT OF INTEREST</head>
+            <p>Author and co‐authors have no conflict of interest.</p>
+         </div>
+         <div xml:id="edm2218-sec-1000">
+            <head>AUTHOR CONTRIBUTION</head>
+            <p>Abe Temidayo and Obiora Egbuche were involved in study conception, data acquisition, interpretation of results, and manuscript writing. Joseph Igwe, Opeyemi Jegede, Bivek Wagle were involved in data acquisition and statistical analysis. Titilope Olanipekun and Anekwe Onwuanyi were engaged in the critical review.</p>
+         </div>
+      </body>
+      <back>
+         <div type="data-availability" xml:id="edm2218-sec-0010">
+            <head>DATA AVAILABILITY STATEMENT</head>
+            <p>The data that support this study's findings are available on request from the corresponding author [T.A]. The data are not publicly available due to them containing sensitive information that could compromise participant privacy.</p>
+         </div>
+         <div type="references">
+            <head>REFERENCES</head>
+            <listBibl>
+               <biblStruct type="journal" xml:id="edm2218-bib-0001">
+                  <analytic>
+                     <title level="a" type="main">Cardiovascular Considerations for Patients, Health Care Workers, and Health Systems During the COVID‐19 Pandemic</title>
+                     <persName>
+                        <surname>Beckman</surname>
+                        <forename type="first">JA</forename>
+                     </persName>
+                     <persName>
+                        <surname>Bikdeli</surname>
+                        <forename type="first">B</forename>
+                     </persName>
+                     <persName>
+                        <surname>Biondi‐Zoccai</surname>
+                        <forename type="first">G</forename>
+                     </persName>
+                     <idno type="pmid">32201335</idno>
+                  </analytic>
+                  <monogr>
+                     <title level="j" xml:lang="en">J Am Coll Cardiol</title>
+                     <imprint>
+                        <date type="year">2020</date>
+                        <biblScope unit="vol">75</biblScope>
+                        <biblScope from="2352" unit="page">2352</biblScope>
+                        <biblScope to="2371" unit="page">2371</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct type="journal" xml:id="edm2218-bib-0002">
+                  <analytic>
+                     <title level="a" type="main">Clinical course and risk factors for mortality of adult inpatients with COVID‐19 in Wuhan, China: a retrospective cohort study</title>
+                     <persName>
+                        <surname>Cao</surname>
+                        <forename type="first">B</forename>
+                     </persName>
+                     <persName>
+                        <surname>Chen</surname>
+                        <forename type="first">H</forename>
+                     </persName>
+                     <persName>
+                        <surname>Du</surname>
+                        <forename type="first">R</forename>
+                     </persName>
+                     <idno type="pmid">32171076</idno>
+                  </analytic>
+                  <monogr>
+                     <title level="j" xml:lang="en">Lancet</title>
+                     <imprint>
+                        <date type="year">2020</date>
+                        <biblScope unit="vol">395</biblScope>
+                        <biblScope from="1054" unit="page">1054</biblScope>
+                        <biblScope to="1062" unit="page">1062</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct type="journal" xml:id="edm2218-bib-0003">
+                  <analytic>
+                     <title level="a" type="main">Is diabetes mellitus associated with mortality and severity of COVID‐19? A meta‐analysis</title>
+                     <persName>
+                        <surname>Anikhindi</surname>
+                        <forename type="first">SA</forename>
+                     </persName>
+                     <persName>
+                        <surname>Arora</surname>
+                        <forename type="first">A</forename>
+                     </persName>
+                     <persName>
+                        <surname>Bansal</surname>
+                        <forename type="first">N</forename>
+                     </persName>
+                  </analytic>
+                  <monogr>
+                     <title level="j" xml:lang="en">Diabet Metabol Synd Clinic Res Rev</title>
+                     <imprint>
+                        <date type="year">2020</date>
+                        <biblScope unit="vol">14</biblScope>
+                        <biblScope from="535" unit="page">535</biblScope>
+                        <biblScope to="545" unit="page">545</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct type="journal" xml:id="edm2218-bib-0004">
+                  <analytic>
+                     <title level="a" type="main">Fourth universal definition of myocardial infarction (2018)</title>
+                     <persName>
+                        <surname>Thygesen</surname>
+                        <forename type="first">K</forename>
+                     </persName>
+                     <persName>
+                        <surname>Alpert</surname>
+                        <forename type="first">JS</forename>
+                     </persName>
+                     <persName>
+                        <surname>Jaffe</surname>
+                        <forename type="first">AS</forename>
+                     </persName>
+                     <idno type="pmid">30571511</idno>
+                  </analytic>
+                  <monogr>
+                     <title level="j" xml:lang="en">Circulation</title>
+                     <imprint>
+                        <date type="year">2018</date>
+                        <biblScope unit="vol">138</biblScope>
+                        <biblScope from="e618" unit="page">e618</biblScope>
+                        <biblScope to="e651" unit="page">e651</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct type="journal" xml:id="edm2218-bib-0005">
+                  <analytic>
+                     <title level="a" type="main">Cardiovascular complications in patients with COVID‐19: Consequences of viral toxicities and host immune response</title>
+                     <persName>
+                        <surname>Chang</surname>
+                        <forename type="first">A</forename>
+                     </persName>
+                     <persName>
+                        <surname>Cheng</surname>
+                        <forename type="first">P</forename>
+                     </persName>
+                     <persName>
+                        <surname>Davis</surname>
+                        <forename type="first">MM</forename>
+                     </persName>
+                     <idno type="pmid">32318865</idno>
+                  </analytic>
+                  <monogr>
+                     <title level="j" xml:lang="en">Curr Cardiol Rep</title>
+                     <imprint>
+                        <date type="year">2020</date>
+                        <biblScope unit="vol">22</biblScope>
+                        <biblScope from="32" unit="page">32</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct type="journal" xml:id="edm2218-bib-0006">
+                  <analytic>
+                     <title level="a" type="main">Clinical characteristics and outcomes of patients with severe covid‐19 with diabetes</title>
+                     <persName>
+                        <surname>Dong</surname>
+                        <forename type="first">K</forename>
+                     </persName>
+                     <persName>
+                        <surname>Ren</surname>
+                        <forename type="first">H</forename>
+                     </persName>
+                     <persName>
+                        <surname>Shi</surname>
+                        <forename type="first">X</forename>
+                     </persName>
+                     <idno type="elocation-id">e001343</idno>
+                  </analytic>
+                  <monogr>
+                     <title level="j" xml:lang="en">BMJ Open Diabet Res Care</title>
+                     <imprint>
+                        <date type="year">2020</date>
+                        <biblScope unit="vol">8</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+            </listBibl>
+         </div>
+      </back>
+   </text>
+</TEI>

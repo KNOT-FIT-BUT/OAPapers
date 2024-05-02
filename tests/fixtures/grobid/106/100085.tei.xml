@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /data/cluster/01/yarn/nm/usercache/lanastasiou/filecache/11/grobid-home.zip/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<encodingDesc>
+			<appInfo>
+				<application version="0.4.5-dummy" ident="GROBID" when="2018-05-01T13:24+0000">
+					<ref target="https://github.com/kermitt2/grobid">GROBID - A machine learning software for extracting information from scholarly documents</ref>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">DIAMOND STORAGE RING APERTURES</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Wyles</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="laboratory">Daresbury Laboratory</orgName>
+								<address>
+									<postCode>781</postCode>
+									<settlement>Warrington</settlement>
+									<country>UK, France</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Jones</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="laboratory">Daresbury Laboratory</orgName>
+								<address>
+									<postCode>781</postCode>
+									<settlement>Warrington</settlement>
+									<country>UK, France</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Owen</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="laboratory">Daresbury Laboratory</orgName>
+								<address>
+									<postCode>781</postCode>
+									<settlement>Warrington</settlement>
+									<country>UK, France</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Varley</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="laboratory">Daresbury Laboratory</orgName>
+								<address>
+									<postCode>781</postCode>
+									<settlement>Warrington</settlement>
+									<country>UK, France</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">DIAMOND STORAGE RING APERTURES</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<abstract>
+				<p>This paper discusses the factors contributing to the choice of beam stay-clear (BSC) in DIAMOND. The lifetime which results from this definition is then calculated to ensure that it is adequate for the operation of the machine. The BSC is defined using a semi-empirical approach by calculating the requirement for a momentum acceptance of at least 4% at all locations around the lattice. Allowance for injection and closed orbit errors also contribute to the overall BSC.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">FACTORS DETERMINING APERTURES</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.1">Momentum Acceptance</head><p>This is first sentence. This is second sentence <ref type="bibr" target="#b0">[1]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.2">Injection</head><p>This is first sentence <ref type="bibr" target="#b1">[2]</ref>.</p><p>This is first sentence.</p><p>This is first sentence. This is second sentence.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>APERTURE REQUIREMENTS</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">Contingency</head><p>This is first sentence <ref type="figure" coords="6,420.17,362.03,27.93,9.02" target="#tab_0">Table 1</ref>.</p></div>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 2 :</head><label>2</label><figDesc>Description of figure 2.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 3 :</head><label>3</label><figDesc>Description of figure 3.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" validated="true"><head>Table 1 : Error table for misalignments of the storage ring.</head><label>1</label><figDesc></figDesc><table>Error Type
+Magnitude 
+Quadrupole Transverse Displacement 
+0.1mm 
+Sextupole Transverse Displacement 
+0.1mm
+</table></figure>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Beam Lifetime Studies for the SLS Storage Ring</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Böge</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Streun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. PAC &apos;99</title>
+		<meeting>PAC &apos;99</meeting>
+		<imprint>
+			<date type="published" when="1999" />
+			<biblScope unit="page" from="2430" to="2432" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Accelerateurs circulaires de particules</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Bruck</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1966" />
+			<publisher>PUF</publisher>
+			<pubPlace>Paris</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

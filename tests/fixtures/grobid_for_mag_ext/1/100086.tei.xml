@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /data/cluster/01/yarn/nm/usercache/lanastasiou/filecache/11/grobid-home.zip/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<encodingDesc>
+			<appInfo>
+				<application version="0.4.5-dummy" ident="GROBID" when="2018-05-01T13:24+0000">
+					<ref target="https://github.com/kermitt2/grobid">GROBID - A machine learning software for extracting information from scholarly documents</ref>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Beam Lifetime Studies for the SLS Storage Ring</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="1999">1999</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Böge</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="laboratory">Daresbury Laboratory</orgName>
+								<address>
+									<postCode>781</postCode>
+									<settlement>Warrington</settlement>
+									<country>UK, France</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Streun</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="laboratory">Daresbury Laboratory</orgName>
+								<address>
+									<postCode>781</postCode>
+									<settlement>Warrington</settlement>
+									<country>UK, France</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Beam Lifetime Studies for the SLS Storage Ring</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<abstract>
+				<p>This is first sentence of abstract. This is second sentence of abstract.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">FACTORS DETERMINING APERTURES</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.1">Momentum Acceptance</head><p>This is first sentence. This is second sentence <ref type="bibr" target="#b0">[1]</ref>.</p></div>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Process for mass-dyeing of thermoplastics: polystyrene and styrene copolymers with indoline methine dyes</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Bernhard</forename><surname>Wehling</surname></persName>
+		</author>
+		<idno>ESRP-IRM-4/83</idno>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Accelerateurs circulaires de particules</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Bruck</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1966" />
+			<publisher>PUF</publisher>
+			<pubPlace>Paris</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

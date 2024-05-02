@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /data/cluster/01/yarn/nm/usercache/lanastasiou/filecache/11/grobid-home.zip/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<encodingDesc>
+			<appInfo>
+				<application version="0.4.5-dummy" ident="GROBID" when="2018-05-01T13:24+0000">
+					<ref target="https://github.com/kermitt2/grobid">GROBID - A machine learning software for extracting information from scholarly documents</ref>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Title 0</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Author</forename><surname>A</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="laboratory">Daresbury Laboratory</orgName>
+								<address>
+									<postCode>781</postCode>
+									<settlement>Warrington</settlement>
+									<country>UK, France</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Author</forename><surname>B</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="laboratory">Daresbury Laboratory</orgName>
+								<address>
+									<postCode>781</postCode>
+									<settlement>Warrington</settlement>
+									<country>UK, France</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Title 0</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Section 0</head><p>sentence 0</p></div>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><figDesc>figure 0 decription</figDesc></figure>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Title 1</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Author</forename><surname>0</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Author</forename><surname>1</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. PAC &apos;99</title>
+		<meeting>PAC &apos;99</meeting>
+		<imprint>
+			<date type="published" when="2020" />
+			<biblScope unit="page" from="2430" to="2432" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Unknown Title</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Unknown Author</forename><surname>0</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Unknown Author</forename><surname>1</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. PAC &apos;99</title>
+		<meeting>PAC &apos;99</meeting>
+		<imprint>
+			<date type="published" when="2000" />
+			<biblScope unit="page" from="2430" to="2432" />
+		</imprint>
+	</monogr>
+</biblStruct>
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

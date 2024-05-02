@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /data/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<encodingDesc>
+			<appInfo>
+				<application version="0.4.1" ident="GROBID" when="2016-10-07T16:27+0000">
+					<ref target="https://github.com/kermitt2/grobid">GROBID - A machine learning software for extracting information from scholarly documents</ref>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main"></title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2003-08">August 2003</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<abstract/>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" validated="false" coords="1,130.25,547.29,328.82,56.55"><figDesc coords="1,130.25,547.29,230.27,9.04;1,130.25,593.61,328.82,10.23;2,150.09,365.50,317.15,10.23;2,164.26,492.17,126.04,10.23;3,130.24,168.03,283.22,9.04;3,130.24,302.88,328.69,9.16;4,135.91,223.03,331.36,9.04;4,135.91,453.50,331.34,10.23">Why is placement an important part of learning to teach? in-situet al et al. learning and professional development occurring during a placement? in schools with little status and that there are substantial differences between the et al.et al., et al.</figDesc><table coords="4,135.91,619.03,328.84,20.04">Are student teacher school placements currently delivering what is required for 
+successful student learning and professional development? 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Brisard, et al. 
+
+
+recognising the contribution of all stakeholders and increasing the range of 
+
+
+
+
+
+
+
+Initial Teacher Education 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Phase One 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Phase Two 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Questionnaires 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Limitations/Bias 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+by students and teachers 
+
+
+
+
+responses 
+all responses 
+
+(rounded to nearest whole) 
+
+
+(of either students or teachers) 
+Students 
+Teachers 
+Students 
+Teachers 
+
+Getting to know the school and 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" validated="false" coords="9,132.96,109.79,323.35,94.45"><figDesc coords="9,132.96,109.79,323.35,9.04;9,353.42,143.49,19.66,8.14">Table 2: Comparison of the most common responses from students and teachers n=82</figDesc><table coords="9,417.43,143.49,19.63,8.14">n=38 
+
+
+
+
+
+
+
+</table></figure>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Mentoring and Tutoring Evolution or Revolution? HMIE Scoping Review of Initial Teacher Education Journal of Education for Teaching The Political Dimension in Teacher Education: Comparative Perspectives on Policy Formulation, Socialization and Society The Report of the Independent Committee of Enquiry into Professional Conditions of Service for Teacher: A Teaching Profession for the 21st Century </head></div>			</div>
+			<div type="references">
+
+				<listBibl/>
+			</div>
+		</back>
+	</text>
+</TEI>
