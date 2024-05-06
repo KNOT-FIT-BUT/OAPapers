@@ -37,9 +37,9 @@ or use:
     ./build_cython.sh
 
 ## OAPapers Corpus
-The corpus is available at [](https://huggingface.co/datasets/oapapers).
+The corpus is available at [https://athena2.fit.vutbr.cz/oapapers/](https://athena2.fit.vutbr.cz/oapapers/).
 
-As the generation of Hugging Face dataset cache is slow you can also load it directly using this package:
+You can load it using:
 
 ```python
 from oapapers.datasets import OADataset
@@ -52,9 +52,9 @@ with OADataset("oapapers.jsonl", "oapapers.jsonl.index") as dataset:
 As this is rather heavyweight package with lots of dependencies, you can also use the repository containing only dataset loaders: [https://github.com/KNOT-FIT-BUT/OAPapersLoader](https://github.com/KNOT-FIT-BUT/OAPapersLoader).
 
 ## OARelatedWork dataset
-There is existing Hugging Face dataset for OARelatedWork dataset. You can find it [here](https://huggingface.co/datasets/oarelwork).
+There is existing Hugging Face dataset for OARelatedWork dataset. You can find it at [https://huggingface.co/datasets/BUT-FIT/OARelatedWork](https://huggingface.co/datasets/BUT-FIT/OARelatedWork).
 
-As the generation of Hugging Face dataset cache is slow you can also load it directly using this package:
+You can also load it directly using this package:
 
 ```python
 from oapapers.datasets import OARelatedWork, OADataset
@@ -89,3 +89,22 @@ As this is rather heavyweight package with lots of dependencies, you can also us
 * **related_work_orig_path** - Path to the original related work section in the document.
 * **bibliography** - document bibliography
 * **non_plaintext_content** - tables and figures
+
+# Sources
+The corpus (and derived dataset) contains open access papers obtained from **CORE** and **SemanticScholar** corpora. These corpora contain third party content and materials, such as open access works from publicly available sources. In addition to the licenses of those organizations (ODC-By, CC BY-NC), any underlying Third Party Content may be subject to separate license terms by the respective third party owner. We made the best effort to provide identifiers (title, authors, year, DOI, or SemanticScholar ID) of collected papers to allow the user of this corpus (and derived dataset) to check the license.
+
+
+# Cite
+
+If you use the dataset or the corpus, please cite the following paper:
+
+```bibtex
+@article{docekal2024oarelatedwork,
+      title={OARelatedWork: A Large-Scale Dataset of Related Work Sections with Full-texts from Open Access Sources}, 
+      author={Martin Docekal and Martin Fajcik and Pavel Smrz},
+      year={2024},
+      eprint={2405.01930},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
