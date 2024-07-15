@@ -6,6 +6,8 @@ If you just want a loader for the dataset, you can use the [https://github.com/K
 
 We also provide handy data viewer at [https://github.com/KNOT-FIT-BUT/OAPapersViewer](https://github.com/KNOT-FIT-BUT/OAPapersViewer).
 
+The script for evaluation is available at [https://github.com/KNOT-FIT-BUT/OARelatedWorkEvaluator](https://github.com/KNOT-FIT-BUT/OARelatedWorkEvaluator).
+
 # Install
 You must install the faiss (faiss~=1.7.1):
 
