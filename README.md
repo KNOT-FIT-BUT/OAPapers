@@ -56,6 +56,8 @@ As this is rather heavyweight package with lots of dependencies, you can also us
 ## OARelatedWork dataset
 There is existing Hugging Face dataset for OARelatedWork dataset. You can find it at [https://huggingface.co/datasets/BUT-FIT/OARelatedWork](https://huggingface.co/datasets/BUT-FIT/OARelatedWork).
 
+We also made public the data obtained from human annotation at [https://huggingface.co/datasets/BUT-FIT/OARelatedWorkMetaEval](https://huggingface.co/datasets/BUT-FIT/OARelatedWorkMetaEval).
+
 You can also load it directly using this package:
 
 ```python
