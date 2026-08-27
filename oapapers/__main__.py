@@ -358,6 +358,22 @@ class ArgumentsManager(object):
                                    default=0)
         extend_parser.set_defaults(func=extend)
 
+        sections_dataset = subparsers.add_parser("sections", help="Creation of dataset for section classification.")
+        sections_dataset.add_argument("documents", help="Path to dataset with documents in OAPapers format.", type=str)
+        sections_dataset.add_argument("result",
+                                      help="Path to file where results will be saved. It will save index of that file on the same path but with .index extension.",
+                                      type=str)
+        sections_dataset.add_argument("-w", "--workers",
+                                      help="Values grater than zero activates multiprocessing. "
+                                           "It is number of additional workers."
+                                           "You can use -1 for using all cpus.",
+                                      type=int,
+                                      default=0)
+        sections_dataset.add_argument("-u", "--unordered",
+                                      help="The order of documents will be ignored. Allows more effective processing.",
+                                      action="store_true")
+        sections_dataset.set_defaults(func=create_sections_dataset)
+
         related_work = subparsers.add_parser("related_work", help="Creation of OARelatedWork dataset.")
         related_work.add_argument("documents", help="Path to dataset with documents in OAPapers format.", type=str)
         related_work.add_argument("reviews",
@@ -793,7 +809,6 @@ class ArgumentsManager(object):
                                                           action="store_true")
         make_rw_train_val_test_splits_parser.set_defaults(func=make_rw_train_val_test_splits)
 
-
         create_title_database_parser = subparsers.add_parser("create_title_database",
                                                              help="It creates normalized titles database for given dataset.")
         create_title_database_parser.add_argument("dataset",
@@ -815,7 +830,6 @@ class ArgumentsManager(object):
                                                   help="Signalizes that the dataset has scopus format.",
                                                   action="store_true")
         create_title_database_parser.set_defaults(func=create_title_database)
-
 
         merge_intervals_parser = subparsers.add_parser("merge_intervals",
                                                        help="When processing by intervals you can use this function to merge them.")
@@ -2669,23 +2683,24 @@ class RelatedWorkTransform:
     Transforms documents containing related work sections. If the document doesn't have related work section it will
     transform it into a None.
     """
+    RELATED_WORK_REGEX = re.compile(r"^((^|\s|\()((((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|"
+                                             r"[0-9]+|[a-z])(\.(((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|[0-9]+"
+                                             r"|[a-z]))*\.?)($|\s|\)))?\s*((related\s+works?)|(related\s+literature)|"
+                                             r"(theoretical\s+background)|(literature\s+review))\s*$", re.IGNORECASE)
+
+    BACKGROUND_REGEX = re.compile(r"^((^|\s|\()((((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|"
+                                           r"[0-9]+|[a-z])(\.(((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|[0-9]+"
+                                           r"|[a-z]))*\.?)($|\s|\)))?\s*background\s*$", re.IGNORECASE)
+
+    INTRODUCTION_REGEX = re.compile(r"^((^|\s|\()((((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|"
+                                             r"[0-9]+|[a-z])(\.(((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|[0-9]+"
+                                             r"|[a-z]))*\.?)($|\s|\)))?\s*introduction\s*$", re.IGNORECASE)
+
 
     def __init__(self, references_ids: SortedSet[int]):
         """
         :param references_ids: ids of documents that might be references
         """
-        self.related_work_regex = re.compile(r"^((^|\s|\()((((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|"
-                                             r"[0-9]+|[a-z])(\.(((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|[0-9]+"
-                                             r"|[a-z]))*\.?)($|\s|\)))?\s*((related\s+works?)|(related\s+literature)|"
-                                             r"(theoretical\s+background)|(literature\s+review))\s*$", re.IGNORECASE)
-
-        self.background_regex = re.compile(r"^((^|\s|\()((((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|"
-                                           r"[0-9]+|[a-z])(\.(((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|[0-9]+"
-                                           r"|[a-z]))*\.?)($|\s|\)))?\s*background\s*$", re.IGNORECASE)
-
-        self.introduction_regex = re.compile(r"^((^|\s|\()((((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|"
-                                             r"[0-9]+|[a-z])(\.(((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|[0-9]+"
-                                             r"|[a-z]))*\.?)($|\s|\)))?\s*introduction\s*$", re.IGNORECASE)
 
         self.references_ids = references_ids
 
@@ -2707,20 +2722,20 @@ class RelatedWorkTransform:
         # we will search in depth 1 as we want to speed up things and also prevent unwanted recursion when
         # constructing new tree as there was one document named Abstract which causes that a related work section
         # was inside the abstract section and the hierarchy was not tree anymore
-        related_work_section = document.hierarchy.get_part(self.related_work_regex, max_h=2, min_depth=1, max_depth=1,
+        related_work_section = document.hierarchy.get_part(self.RELATED_WORK_REGEX, max_h=2, min_depth=1, max_depth=1,
                                                            return_path=True)
 
         # check whether we can use background section
         if not related_work_section:
-            introduction_section = document.hierarchy.get_part(self.introduction_regex, max_h=1, min_depth=1,
+            introduction_section = document.hierarchy.get_part(self.INTRODUCTION_REGEX, max_h=1, min_depth=1,
                                                                max_depth=1)
             if introduction_section:
                 introduction_section = introduction_section[0]
                 # we want the introduction to be present as sometimes background is writen as introduction
-                background_section = document.hierarchy.get_part(self.background_regex, max_h=2, min_depth=1,
+                background_section = document.hierarchy.get_part(self.BACKGROUND_REGEX, max_h=2, min_depth=1,
                                                                  max_depth=1, return_path=True)
                 if len(background_section) == 1 and introduction_section.height == background_section[0][0].height and \
-                        not introduction_section.get_part(self.background_regex, max_h=2):
+                        not introduction_section.get_part(self.BACKGROUND_REGEX, max_h=2):
                     # we don't want the background to be part of introduction as in some cases it was not
                     # literature review
                     related_work_section = background_section
@@ -3005,14 +3020,17 @@ def create_filter_features(args: argparse.Namespace):
             for i in d.citations:
                 if i in references:
                     try:
-                        add_number_of_input_text_parts, add_number_of_input_words, add_cited_doc_with_mutl_sec_cont = references_cache[i]
+                        add_number_of_input_text_parts, add_number_of_input_words, add_cited_doc_with_mutl_sec_cont = \
+                        references_cache[i]
                     except KeyError:
                         ref = references.get_by_id(i)
                         add_number_of_input_text_parts = sum(1 for _ in ref.hierarchy.text_content())
-                        add_number_of_input_words = sum(len(t.text.split()) for t in ref.hierarchy.text_content()) + sum(
+                        add_number_of_input_words = sum(
+                            len(t.text.split()) for t in ref.hierarchy.text_content()) + sum(
                             len(n.headline.split()) for n in ref.hierarchy.nodes_with_height(2))
                         add_cited_doc_with_mutl_sec_cont = len(ref.hierarchy.content) > 1
-                        references_cache[i] = (add_number_of_input_text_parts, add_number_of_input_words, add_cited_doc_with_mutl_sec_cont)
+                        references_cache[i] = (
+                        add_number_of_input_text_parts, add_number_of_input_words, add_cited_doc_with_mutl_sec_cont)
 
                     number_of_input_text_parts += add_number_of_input_text_parts
                     number_of_input_words += add_number_of_input_words
@@ -3510,6 +3528,7 @@ def identify_bibliography(args: argparse.Namespace):
 
             print(f"new citations {new_cite_cnt}")
 
+
 class IdentifyCitSpansFunctor:
     """
     Functor for identifying citations spans in documents. This means that it will find new spans or matches existing
@@ -3782,6 +3801,7 @@ def create_title_database(args: argparse.Namespace):
         db = PapersList.create_database(args.database)
         PapersList.insert_titles_to_database(db, records, workers=workers, batch_size=args.batch)
 
+
 def merge_intervals(args: argparse.Namespace):
     """
     When processing by intervals you can use this function to marge them.
@@ -3843,6 +3863,7 @@ def filter_missing_ids(args: argparse.Namespace):
         for doc_id, doc in tqdm(dataset.iter_range(0, None, unordered=True), total=len(dataset), desc="Filtering"):
             index_writer.writerow({"key": doc_id, "file_line_offset": res_f.tell()})
             print(doc, file=res_f)
+
 
 def convert_back_from_rw(args: argparse.Namespace):
     workers = args.workers
@@ -4078,6 +4099,132 @@ def enrich_bibliography_from_citation_graph(args: argparse.Namespace):
 
             logging.log(logging.INFO, f"Found {new_cite_cnt} new citations")
             logging.log(logging.INFO, f"Updated {updated_cite_cnt} citations")
+
+
+class SectionsTransform:
+    """
+    Transforms document into sequence of sections.
+    """
+
+    ACKNOWLEDGEMENT_REGEX = re.compile(r"^((^|\s|\()((((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|"
+                                             r"[0-9]+|[a-z])(\.(((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|[0-9]+"
+                                             r"|[a-z]))*\.?)($|\s|\)))?\s*acknowledgement\s*$", re.IGNORECASE)
+
+    CONCLUSION_REGEX = re.compile(r"^((^|\s|\()((((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|"
+                                  r"[0-9]+|[a-z])(\.(((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|[0-9]+"
+                                  r"|[a-z]))*\.?)($|\s|\)))?\s*conclusions?\s*$", re.IGNORECASE)
+
+    CONCLUSION_AND_FUTURE_WORK_REGEX = re.compile(r"^((^|\s|\()((((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|"
+                                  r"[0-9]+|[a-z])(\.(((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|[0-9]+"
+                                  r"|[a-z]))*\.?)($|\s|\)))?\s*conclusion\s+and\s+future\s+work\s*$", re.IGNORECASE)
+
+    FUTURE_WORK_REGEX = re.compile(r"^((^|\s|\()((((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|"
+                                  r"[0-9]+|[a-z])(\.(((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|[0-9]+"
+                                  r"|[a-z]))*\.?)($|\s|\)))?\s*future\s+works?\s*$", re.IGNORECASE)
+
+    APPENDIX_REGEX = re.compile(r"^((^|\s|\()((((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|"
+                                             r"[0-9]+|[a-z])(\.(((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|[0-9]+"
+                                             r"|[a-z]))*\.?)($|\s|\)))?\s*appendix\s*$", re.IGNORECASE)
+
+    EVALUATION_REGEX = re.compile(r"^((^|\s|\()((((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|"
+                                             r"[0-9]+|[a-z])(\.(((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|[0-9]+"
+                                             r"|[a-z]))*\.?)($|\s|\)))?\s*evaluation\s*$", re.IGNORECASE)
+
+    EXPERIMENTS_REGEX = re.compile(r"^((^|\s|\()((((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|"
+                                             r"[0-9]+|[a-z])(\.(((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|[0-9]+"
+                                             r"|[a-z]))*\.?)($|\s|\)))?\s*experiments?\s*$", re.IGNORECASE)
+
+    RESULTS_REGEX = re.compile(r"^((^|\s|\()((((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|"
+                                             r"[0-9]+|[a-z])(\.(((X{1,3}(IX|IV|V?I{0,3}))|((IX|IV|I{1,3}|VI{0,3})))|[0-9]+"
+                                             r"|[a-z]))*\.?)($|\s|\)))?\s*results?\s*$", re.IGNORECASE)
+
+    def __call__(self, document: Document) -> Optional[Tuple[int, List[tuple[str, str, str]]]]:
+        """
+        Transformation of document into form that is suitable for creating related work dataset.
+
+        :param document: document to transform
+        :return:
+            None if the document doesn't contain related work section
+
+            else
+                id of document
+                list of sections in form of tuples
+                    (section type, section headline, section content json representation)
+        """
+        sections = []
+
+        # firstly lets add abstract
+        abstract = document.abstract
+        if abstract is not None:
+            sections.append(("abstract", "Abstract", json_dumps(abstract.asdict())))
+
+        # then iterate over top-lvl sections, classify them and add them to the list
+
+        for section in document.hierarchy.content:
+            if section.headline is not None:
+                if ABSTRACT_REGEX.match(section.headline):
+                    continue
+                elif RelatedWorkTransform.INTRODUCTION_REGEX.match(section.headline):
+                    sections.append(("introduction", section.headline, json_dumps(section.asdict()["content"])))
+                elif RelatedWorkTransform.BACKGROUND_REGEX.match(section.headline):
+                    sections.append(("background", section.headline, json_dumps(section.asdict()["content"])))
+                elif RelatedWorkTransform.RELATED_WORK_REGEX.match(section.headline):
+                    sections.append(("related_work", section.headline, json_dumps(section.asdict()["content"])))
+                elif self.ACKNOWLEDGEMENT_REGEX.match(section.headline):
+                    sections.append(("acknowledgement", section.headline, json_dumps(section.asdict()["content"])))
+                elif self.CONCLUSION_REGEX.match(section.headline):
+                    sections.append(("conclusion", section.headline, json_dumps(section.asdict()["content"])))
+                elif self.CONCLUSION_AND_FUTURE_WORK_REGEX.match(section.headline):
+                    sections.append(("conclusion_and_future_work", section.headline, json_dumps(section.asdict()["content"])))
+                elif self.FUTURE_WORK_REGEX.match(section.headline):
+                    sections.append(("future_work", section.headline, json_dumps(section.asdict()["content"])))
+                elif self.APPENDIX_REGEX.match(section.headline):
+                    sections.append(("appendix", section.headline, json_dumps(section.asdict()["content"])))
+                elif self.EVALUATION_REGEX.match(section.headline):
+                    sections.append(("evaluation", section.headline, json_dumps(section.asdict()["content"])))
+                elif self.EXPERIMENTS_REGEX.match(section.headline):
+                    sections.append(("experiments", section.headline, json_dumps(section.asdict()["content"])))
+                elif self.RESULTS_REGEX.match(section.headline):
+                    sections.append(("results", section.headline, json_dumps(section.asdict()["content"])))
+                else:
+                    sections.append(("other", section.headline, json_dumps(section.asdict()["content"])))
+
+        return document.id, sections
+
+
+def create_sections_dataset(args: argparse.Namespace):
+    """
+    Creates dataset with sections.
+    """
+
+    workers = args.workers
+    if workers == -1:
+        workers = multiprocessing.cpu_count()
+
+    sample_id = 0
+    with OADataset(args.documents, args.documents + ".index", workers=workers, lazy_hierarchy=True) as dataset, \
+            open(args.result, "w") as res_f, \
+            open(args.result + ".index", "w") as res_index_f:
+        index_writer = csv.DictWriter(res_index_f, fieldnames=["key", "file_line_offset"], delimiter="\t")
+        index_writer.writeheader()
+
+        dataset.transform = SectionsTransform()
+        dataset.chunk_size = 100
+
+        for doc_res in tqdm(dataset.iter_range(unordered=args.unordered), total=len(dataset), desc="Collecting"):
+            if doc_res is not None:
+                doc_id, sections = doc_res
+
+                index_writer.writerow({"key": doc_id, "file_line_offset": res_f.tell()})
+                for section in sections:
+                    print(json_dumps({
+                        "id": sample_id,
+                        "doc_id": doc_id,
+                        "label": section[0],
+                        "headline": section[1],
+                        "content": section[2]
+                    }), file=res_f)
+                    sample_id += 1
 
 def kill_children():
     """

@@ -8,6 +8,8 @@ We also provide handy data viewer at [https://github.com/KNOT-FIT-BUT/OAPapersVi
 
 The script for evaluation is available at [https://github.com/KNOT-FIT-BUT/OARelatedWorkEvaluator](https://github.com/KNOT-FIT-BUT/OARelatedWorkEvaluator).
 
+The script for meta-evaluation is available at [https://github.com/KNOT-FIT-BUT/OARelatedWorkMetaEval](https://github.com/KNOT-FIT-BUT/OARelatedWorkMetaEval).
+
 # Install
 You must install the faiss (faiss~=1.7.1):
 
