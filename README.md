@@ -10,6 +10,10 @@ The script for evaluation is available at [https://github.com/KNOT-FIT-BUT/OARel
 
 The script for meta-evaluation is available at [https://github.com/KNOT-FIT-BUT/OARelatedWorkMetaEval](https://github.com/KNOT-FIT-BUT/OARelatedWorkMetaEval).
 
+# Hugging Face Datasets
+* OARelatedWork dataset: [https://huggingface.co/datasets/BUT-FIT/OARelatedWork](https://huggingface.co/datasets/BUT-FIT/OARelatedWork)
+* OARelatedWorkMetaEval dataset: [https://huggingface.co/datasets/BUT-FIT/OARelatedWorkMetaEval](https://huggingface.co/datasets/BUT-FIT/OARelatedWorkMetaEval)
+
 # Install
 You must install the faiss (faiss~=1.7.1):
 
